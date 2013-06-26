@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.utopia.ws</groupId>
+	<artifactId>02_ws_impl</artifactId>
+	<packaging>war</packaging>
+	<parent>
+		<groupId>org.utopia.ws</groupId>
+		<artifactId>ws-parent</artifactId>
+		<version>1.0.0</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	
+	<version>1.0.0</version>
+	<name>01_ws_run Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+
+		<dependency>
+		  <groupId>javax.xml.ws</groupId>
+		  <artifactId>jaxws-api</artifactId>
+		</dependency>
+
+	</dependencies>
+	
+	<!-- build configuration -->
+	<build>
+		<!-- plugin configuration -->
+		<pluginManagement>
+			<plugins>
+				<!-- maven compiler plugin configuration -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+				</plugin>
+
+				<!-- maven source plugin configuration -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-source-plugin</artifactId>
+				</plugin>
+
+				<!-- maven rar plugin configuration -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-rar-plugin</artifactId>
+				</plugin>
+
+				<!-- tomcat maven plugin configuration -->
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>tomcat-maven-plugin</artifactId>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>

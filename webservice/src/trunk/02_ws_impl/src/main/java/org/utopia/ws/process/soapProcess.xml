@@ -1,0 +1,94 @@
+<!-- add 方法  -send -->
+<?xml version="1.0" ?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Body>
+		<ns2:add xmlns:ns2="http://service.utopia.org/">
+			<arg0>2</arg0>
+			<arg1>3</arg1>
+		</ns2:add>
+	</S:Body>
+</S:Envelope>
+
+
+<!-- add 方法  -resp -->
+<?xml version="1.0" ?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Body>
+		<ns2:addResponse xmlns:ns2="http://service.utopia.org/">
+			<addResult>2+3=5</addResult>
+		</ns2:addResponse>
+	</S:Body>
+</S:Envelope>
+
+
+<!-- queryUserList 方法 -send -->
+<?xml version="1.0" ?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Body>
+		<ns2:queryUserList xmlns:ns2="http://service.utopia.org/">
+			<arg0>
+				<age>17</age>
+				<id>101</id>
+				<name>寮犱笁</name>
+			</arg0>
+		</ns2:queryUserList>
+	</S:Body>
+</S:Envelope>
+
+
+<!-- queryUserList 方法 -resp -->
+<?xml version="1.0" ?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Body>
+		<ns2:queryUserListResponse xmlns:ns2="http://service.utopia.org/">
+			<return>
+				<age>18</age>
+				<id>101</id>
+				<name>寮犱笁</name>
+			</return>
+			<return>
+				<age>19</age>
+				<id>102</id>
+				<name>鏉庡洓</name>
+			</return>
+			<return>
+				<age>20</age>
+				<id>103</id>
+				<name>鐜嬩簲</name>
+			</return>
+			<return>
+				<age>21</age>
+				<id>104</id>
+				<name>鍏瘺</name>
+			</return>
+		</ns2:queryUserListResponse>
+	</S:Body>
+</S:Envelope>
+
+
+
+<!-- queryUserInfo 方法 -send -->
+<?xml version="1.0" ?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Body>
+		<ns2:queryUserInfo xmlns:ns2="http://service.utopia.org/">
+			<arg0>1</arg0>
+		</ns2:queryUserInfo>
+	</S:Body>
+</S:Envelope>
+
+
+<!-- queryUserInfo 方法 -resp -->
+<?xml version="1.0" ?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Body>
+		<ns2:queryUserInfoResponse xmlns:ns2="http://service.utopia.org/">
+			<return>
+				<age>17</age>
+				<id>101</id>
+				<name>寮犱笁</name>
+			</return>
+		</ns2:queryUserInfoResponse>
+	</S:Body>
+</S:Envelope>
+
